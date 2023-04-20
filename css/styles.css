@@ -117,8 +117,6 @@ p {
   border-radius: 2px;
 }
 
-.nav-list .link:hover::after,
-.nav-list .link:focus::after,
 .nav-list .current::after {
   background-color: var(--pressed-state-color);
 }
