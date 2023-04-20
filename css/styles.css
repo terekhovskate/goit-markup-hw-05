@@ -95,10 +95,30 @@ p {
   gap: 40px;
 }
 
+.nav-list .item {
+  position: relative;
+}
+
 .nav-list .link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.nav-list .link:after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  border-radius: 2px;
+}
+
+.nav-list .link:hover::after,
+.nav-list .link:focus::after,
+.nav-list .current::after {
+  background-color: var(--pressed-state-color);
 }
 
 .contacts {
@@ -199,6 +219,69 @@ p {
   background-color: var(--pressed-state-color);
 }
 
+/*MODAL*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(46, 47, 66, 0.4);
+
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  width: 408px;
+  min-height: 576px;
+  padding: 24px;
+
+  background: #fcfcfc;
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-right: 24px;
+
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+
+  background: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
 /* 2nd Section/Features Section*/
 .features-list {
   display: flex;
@@ -544,6 +627,43 @@ p {
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-description {
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+  color: var(--light-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.product-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: var(--primary-brand-color);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-list .item:hover .product-overlay,
+.work-list .item:focus .product-overlay {
+  transform: translateY(0);
 }
 
 .apps {
