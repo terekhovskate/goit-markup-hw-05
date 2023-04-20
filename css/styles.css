@@ -10,7 +10,7 @@
   --light-grey-color: #afb1b8;
 }
 
-/* Reset*/
+/* ======================= Reset ========================== */
 .page {
   background-color: var(--white-background-color);
   color: var(--text-color);
@@ -49,7 +49,7 @@ p {
   text-decoration: none;
 }
 
-/* Header */
+/* ======================= Header section ========================== */
 .header {
   border-bottom: 1px solid var(--accent-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -146,7 +146,7 @@ p {
   text-decoration: none;
 }
 
-/* 1st Section/Hero Section*/
+/* ======================= 1st section/Hero section ========================== */
 .overlay {
   max-width: 1440px;
   height: 600px;
@@ -221,7 +221,7 @@ p {
   background-color: var(--pressed-state-color);
 }
 
-/*MODAL*/
+/* ======================= Modal ========================== */
 
 .backdrop {
   position: fixed;
@@ -284,7 +284,8 @@ p {
 
   cursor: pointer;
 }
-/* 2nd Section/Features Section*/
+
+/* ======================= 2nd section/ Features section ========================== */
 .features-list {
   display: flex;
   gap: 24px;
@@ -339,8 +340,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-/* 3rd Section/What are we doing Section*/
-
+/* ======================= 3rd section/ What we are doing ========================== */
 .pictures {
   padding-bottom: 120px;
 }
@@ -376,7 +376,7 @@ p {
   width: calc((100% - 72px) / 4);
 }
 
-/* 4th Section/Members Section*/
+/* ======================= 4th section/Members section ========================== */
 .info {
   padding: 32px 0;
 }
@@ -451,7 +451,7 @@ p {
   background-color: #404bbf;
 }
 
-/* 5th Section/Clients Section*/
+/* ======================= 5th section/ Clients section ========================== */
 .clients {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -500,7 +500,7 @@ p {
   fill: currentColor;
 }
 
-/* Footer Section*/
+/* ======================= Footer section ========================== */
 .footer {
   background-color: var(--dark-color);
   padding-top: 100px;
@@ -594,7 +594,7 @@ p {
   padding: 96px 0 120px;
 }
 
-/* Portfolio Main*/
+/* ======================= Portfolio Main ========================== */
 .buttons {
   display: flex;
   gap: 24px;
