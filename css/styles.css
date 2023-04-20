@@ -81,8 +81,8 @@ p {
 
 .nav-list .link:hover,
 .nav-list .link:focus,
-.address .mail:active,
-.address .tell:active {
+.address-item:hover,
+.address-item:focus {
   color: var(--pressed-state-color);
 }
 
@@ -123,9 +123,6 @@ p {
 
 .contacts {
   display: flex;
-}
-
-.contacts {
   gap: 40px;
 }
 
@@ -134,6 +131,7 @@ p {
 
   font-style: normal;
 }
+
 .address-item {
   color: var(--text-color);
 
@@ -142,6 +140,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ======================= 1st section/Hero section ========================== */
