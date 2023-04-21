@@ -78,7 +78,7 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+.nav-list .current,
 .nav-list .link:hover,
 .nav-list .link:focus,
 .address-item:hover,
@@ -287,6 +287,12 @@ p {
   border-radius: 50%;
 
   cursor: pointer;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--pressed-state-color);
+  fill: var(--white-background-color);
 }
 
 /* ======================= 2nd section/ Features section ========================== */
