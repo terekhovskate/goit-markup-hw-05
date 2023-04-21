@@ -12,14 +12,16 @@
 
 /* ======================= Reset ========================== */
 .page {
+  font-family: Roboto, sans-serif;
+
   background-color: var(--white-background-color);
   color: var(--text-color);
-  font-family: Roboto, sans-serif;
 }
 
 .list {
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
 
@@ -41,12 +43,13 @@ p {
 }
 
 .link {
-  color: var(--dark-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: var(--dark-color);
 }
 
 /* ======================= Header section ========================== */
@@ -68,8 +71,6 @@ p {
 .logo {
   margin-right: 76px;
 
-  color: var(--primary-brand-color);
-
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -77,7 +78,10 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+
+  color: var(--primary-brand-color);
 }
+
 .nav-list .current,
 .nav-list .link:hover,
 .nav-list .link:focus,
@@ -109,11 +113,13 @@ p {
 
 .nav-list .link:after {
   position: absolute;
+  bottom: 0;
+
   display: block;
   content: "";
   height: 4px;
   width: 100%;
-  bottom: 0;
+
   border-radius: 2px;
 }
 
@@ -133,13 +139,13 @@ p {
 }
 
 .address-item {
-  color: var(--text-color);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: var(--text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -186,12 +192,12 @@ p {
   margin-top: 0;
   margin-bottom: 48px;
 
-  color: var(--white-background-color);
-
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+
+  color: var(--white-background-color);
 }
 
 .hero-button {
@@ -201,17 +207,17 @@ p {
   min-width: 169px;
   min-height: 56px;
 
-  border-radius: 4px;
-  border: none;
-
-  color: var(--white-background-color);
-  background-color: var(--primary-brand-color);
-
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  color: var(--white-background-color);
+  background-color: var(--primary-brand-color);
+
+  border-radius: 4px;
+  border: none;
 
   cursor: pointer;
 
@@ -271,17 +277,17 @@ p {
 }
 
 .modal-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 24px;
-  margin-right: 24px;
-
   position: absolute;
   width: 24px;
   height: 24px;
   top: 0;
   right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-right: 24px;
 
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -333,12 +339,12 @@ p {
   margin-top: 0;
   margin-bottom: 8px;
 
-  color: var(--dark-color);
-
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  color: var(--dark-color);
 }
 
 .features-text,
@@ -346,11 +352,11 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 
-  color: var(--text-color);
-
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  color: var(--text-color);
 }
 
 /* ======================= 3rd section/ What we are doing ========================== */
@@ -361,14 +367,14 @@ p {
 .section-title {
   margin-bottom: 72px;
 
-  color: var(--dark-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
+  color: var(--dark-color);
 }
 
 .img-list {
@@ -405,23 +411,23 @@ p {
 .team-member {
   width: 264px;
 
+  background-color: #ffffff;
+
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-
-  background-color: #ffffff;
 }
 
 .name {
   margin-bottom: 8px;
-
-  color: var(--dark-color);
 
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+
+  color: var(--dark-color);
 }
 
 .position {
@@ -515,16 +521,15 @@ p {
 
 /* ======================= Footer section ========================== */
 .footer {
-  background-color: var(--dark-color);
   padding-top: 100px;
   padding-bottom: 100px;
+
+  background-color: var(--dark-color);
 }
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-
-  color: var(--primary-brand-color);
 
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -533,6 +538,8 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+
+  color: var(--primary-brand-color);
 }
 
 .footer-studio {
@@ -542,12 +549,12 @@ p {
 .footer-text {
   width: 264px;
 
-  color: var(--light-color);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  color: var(--light-color);
 }
 
 .footer-info {
@@ -559,12 +566,12 @@ p {
 .social-media-title {
   margin-bottom: 16px;
 
-  color: var(--white-background-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  color: var(--white-background-color);
 }
 
 .social-media-icon {
@@ -626,17 +633,17 @@ p {
 .buttons .btn {
   padding: 12px 24px;
 
-  background-color: var(--light-color);
-  color: var(--primary-brand-color);
-
-  border-radius: 4px;
-  border: 1px solid #e7e9fc;
-
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  background-color: var(--light-color);
+  color: var(--primary-brand-color);
+
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
 
   cursor: pointer;
 
@@ -665,6 +672,7 @@ p {
   padding-top: 40px;
   padding-right: 32px;
   padding-left: 32px;
+
   color: var(--light-color);
 
   font-style: normal;
@@ -675,16 +683,18 @@ p {
 }
 .product-overlay {
   position: absolute;
+  top: 0;
+  left: 0;
+
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
 
   background-color: var(--primary-brand-color);
 
   transform: translateY(100%);
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -726,7 +736,6 @@ p {
 .work-list {
   display: flex;
   flex-wrap: wrap;
-
   column-gap: 24px;
   row-gap: 48px;
 }
