@@ -282,16 +282,19 @@ p {
   top: 0;
   right: 0;
 
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background: var(--pressed-state-color);
+  background-color: var(--pressed-state-color);
   fill: var(--white-background-color);
 }
 
